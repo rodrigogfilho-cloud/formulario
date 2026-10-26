@@ -31,6 +31,8 @@
 
 
     }
+
+  
 </style>
 
 <body>
@@ -40,12 +42,12 @@
 
     <h1>Entrar</h1>
 
-    <form action="/enviar.html" method="POST">
+    <form action="/enviar.html" method="get">
         <label for="cpf">Documento Identificação</label><br/>
-        <input type="number" id="cpf" name="cpf" value=""  placeholder="Digite seu CPF" /><br/>
+        <input type="number" id="cpf" name="cpf" value=""  placeholder="Digite seu CPF"  required/><br/>
 
         <label for="senha">Senha:</label><br/>
-        <input type="password" id="senha" name="senha"  value="" placeholder="Digite sua senha" />
+        <input type="password" id="senha" name="senha"  value="" placeholder="Digite sua senha"    required/>
 
         <hr />
         <h2>Botões utilizando a TAG !BUTTON!</h2>
@@ -57,7 +59,44 @@
         <input type="button" value="Entrar" />  <!-- Pelo de fato de ser um input tipo: button, ele não tem função nenhuma. -->
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpar" />
+        <hr>
+
+        <h2>Selecione sua linguagem favorita</h2>
+        
+
+        <input type="radio" id="html" name="option" value="HTML"/>
+        <label for="html">HTML</label>
+
+        <input type="radio" id="py" name="option" value="Python"/>
+        <label for="py">Python</label>
+
+        <input type="radio" id="JS" name="option" value="JavaScript"/>
+        <label for="JS">JavaScript</label>
+
+        <hr>
+
+        <h2>Quais dias da semana você treina</h2>
+
+        <input type="checkbox" id="segunda" value="segunda-feira"/>
+        <label for="html">segunda-feira</label>
+
+        <input type="checkbox" id="terca" value="terça-feira"/>
+        <label for="py">terça-feira</label>
+
+        <input type="checkbox" id="quarta"  value="quarta-feira"/>
+        <label for="JS">quarta-feira</label>
+
+        <input type="checkbox" id="quinta" value="quinta-feira"/>
+        <label for="py">quinta-feira</label>
+
+        <input type="checkbox" id="sexta"value="sexta-feira"/>
+        <label for="JS">sexta-feira</label>
+
+
+    
+
     </form>
+
 
 
 </body>
