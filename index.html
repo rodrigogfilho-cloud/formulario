@@ -40,21 +40,21 @@
 
     <h1>Entrar</h1>
 
-    <form>
-        <label for="cpf">Documento Identificação</label>
-        <input type="number" id="cpf" name="cpf" value=""  placeholder="Digite seu CPF" />
+    <form action="/enviar.html" method="POST">
+        <label for="cpf">Documento Identificação</label><br/>
+        <input type="number" id="cpf" name="cpf" value=""  placeholder="Digite seu CPF" /><br/>
 
-        <label for="senha">Senha:</label>
+        <label for="senha">Senha:</label><br/>
         <input type="password" id="senha" name="senha"  value="" placeholder="Digite sua senha" />
 
         <hr />
         <h2>Botões utilizando a TAG !BUTTON!</h2>
-        <button>Entrar</button>
+        <button>Entrar</button> <!-- Pelo de fato de ser um button dentro do form, ele se torna tipo=submit automaticamente. -->
         <button type="submit">Enviar</button>
         <button type="reset">Limpar</button>
         <hr />
         <h2>Botões utilizando a TAG !INPUT!</h2>
-        <input type="button" value="Entrar" />
+        <input type="button" value="Entrar" />  <!-- Pelo de fato de ser um input tipo: button, ele não tem função nenhuma. -->
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpar" />
     </form>
