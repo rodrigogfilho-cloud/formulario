@@ -46,6 +46,8 @@
         <label for="cpf">Documento Identificação</label><br/>
         <input type="text" id="cpf" name="cpf" value=""  placeholder="Informe seu CPF" maxlength="11" required/><br/>
 
+        <!-- oninput="if (this.value.length > 11) this.value = this.value.slice(0, 11); Tem como fazer dessa forma também, deixando o type="number" e substituindo o maxlength pelo código -->
+
         <label for="senha">Senha:</label><br/>
         <input type="password" id="senha" name="senha"  value="" placeholder="Digite sua senha"    required/>
 
@@ -77,7 +79,7 @@
 
         <h2>Quais dias da semana você treina</h2>
 
-        <input type="checkbox" id="segunda" value="segunda-feira"/>
+        <input type="checkbox" id="segunda" value="segunda-feira" checked/>
         <label for="html">segunda-feira</label>
 
         <input type="checkbox" id="terca" value="terça-feira"/>
@@ -92,8 +94,25 @@
         <input type="checkbox" id="sexta"value="sexta-feira"/>
         <label for="JS">sexta-feira</label>
 
+        <hr>
 
-    
+        
+        <label for="cor">Qual sua cor prediléta ? </label>
+        <input type="color" id="cor" value="#8A2BE2" />
+
+        <hr>
+
+        <p>Qual é o seu curso ?</p>
+        <select name="selcursos" id="selcursos" ">
+            <option value="" disabled selected>Selecione seu curso</option>
+            <option value="dev">Desenvolvimento de Sistemas</option>
+            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+            <option value="em">Eletromecânica</option>
+            <option value="aws">Amazon Web Services</option>
+            <option value="es">Engenharia de Software</option>
+
+
+        </select>
 
     </form>
 
